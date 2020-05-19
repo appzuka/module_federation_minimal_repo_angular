@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "scripts": {
+    "shell:start": "lerna --scope shell exec -- npm run srv",
+    "shell:build": "lerna --scope shell exec -- npm run webpack:prod",
+    "apps:install": "lerna exec npm install",
+    "apps:clear:builds": "rm -rfv builds/* && echo \"Builds folder is empty\" ",
+    "apps:build": "npm run apps:clear:builds && lerna --scope={store,redux} exec -- npm run build",
+    "apps:serve": "lerna --scope={store,redux} exec -- npm run serve",
+    "apps:delete:nodemodules": "lerna exec -- rm -rf node_modules"
+  }
+}

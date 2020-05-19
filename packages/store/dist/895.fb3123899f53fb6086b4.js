@@ -1,0 +1,1 @@
+(window.webpackJsonpstore=window.webpackJsonpstore||[]).push([[895,179],{895:(s,o,t)=>{"use strict";t.r(o),t.d(o,{default:()=>c});var e,r;const c=(e={},r={},{notifySubscribers(s){r[s]&&r[s].forEach(o=>o(e[s]))},dispatch(s,o){e[s]=o,this.notifySubscribers(s),console.log(e)},test(){},subscribe(s,o){r[s]||(r[s]=[]),r[s].push(o)}})}}]);
