@@ -8,9 +8,10 @@
     "shell:start": "lerna --scope shell exec -- npm run srv",
     "shell:build": "lerna --scope shell exec -- npm run webpack:prod",
     "apps:install": "lerna exec npm install",
+    "apps:start": "lerna exec npm start",
     "apps:clear:builds": "rm -rfv builds/* && echo \"Builds folder is empty\" ",
-    "apps:build": "npm run apps:clear:builds && lerna --scope={store,redux} exec -- npm run build",
-    "apps:serve": "lerna --scope={store,redux} exec -- npm run serve",
+    "apps:build": "npm run apps:clear:builds && lerna --scope={store,shell} exec -- npm run build",
+    "apps:serve": "lerna --scope={store,shell} exec -- npm run serve",
     "apps:delete:nodemodules": "lerna exec -- rm -rf node_modules"
   }
 }

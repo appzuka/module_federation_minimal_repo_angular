@@ -3,3 +3,7 @@ lerna-debug.log
 npm-debug.log
 packages/*/lib
 .idea
+packages/store/dist/index.html
+packages/store/dist/main.js
+packages/store/dist/src_store_js.js
+packages/store/dist/remoteEntry.js

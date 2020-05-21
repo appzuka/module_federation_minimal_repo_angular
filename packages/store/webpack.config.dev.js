@@ -14,6 +14,9 @@ module.exports = {
   optimization: {
     minimize: false
   },
+  devServer: {
+    port: 3004
+  },
 
   output: {
     publicPath: 'http://localhost:3004/'
